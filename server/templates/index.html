@@ -134,7 +134,7 @@
 				{
 					'name': '/info',
 					'example': '/info',
-					'description': 'This method return current info about Sugarchain network.',
+					'description': 'This method return current info about Verge network.',
 					'method': 'GET',
 					'id': 'info'
 				}, {
@@ -158,7 +158,7 @@
 					]
 				}, {
 					'name': '/block/string:hash',
-					'example': '/block/ce8a0df339f2edceb99c5325c95b2b0ae752e29de1193f6113549f0e1cae7c91',
+					'example': '/block/00000000000712f53a46856fb82dd9053a423b03383cb73b448b52181455be20',
 					'description': 'This method return block info by given hash.',
 					'base': '/block/',
 					'method': 'GET',
@@ -167,7 +167,7 @@
 						{
 							'title': 'hash',
 							'description': 'Block hash',
-							'example': 'ce8a0df339f2edceb99c5325c95b2b0ae752e29de1193f6113549f0e1cae7c91',
+							'example': '00000000000712f53a46856fb82dd9053a423b03383cb73b448b52181455be20',
 							'key': true
 						}, {
 							'title': 'offset',
@@ -177,7 +177,7 @@
 					]
 				}, {
 					'name': '/header/string:hash',
-					'example': '/header/ce8a0df339f2edceb99c5325c95b2b0ae752e29de1193f6113549f0e1cae7c91',
+					'example': '/header/00000000000712f53a46856fb82dd9053a423b03383cb73b448b52181455be20',
 					'description': 'This method return block header by given hash.',
 					'base': '/header/',
 					'method': 'GET',
@@ -186,7 +186,7 @@
 						{
 							'title': 'hash',
 							'description': 'Header hash',
-							'example': 'ce8a0df339f2edceb99c5325c95b2b0ae752e29de1193f6113549f0e1cae7c91',
+							'example': '00000000000712f53a46856fb82dd9053a423b03383cb73b448b52181455be20',
 							'key': true
 						}
 					]
@@ -212,7 +212,7 @@
 					]
 				}, {
 					'name': '/balance/string:address',
-					'example': '/balance/sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+					'example': '/balance/RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 					'description': 'This method return address balance.',
 					'base': '/balance/',
 					'method': 'GET',
@@ -221,13 +221,13 @@
 						{
 							'title': 'address',
 							'description': 'Request address',
-							'example': 'sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+							'example': 'RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 							'key': true
 						}
 					]
 				}, {
 					'name': '/mempool/string:address',
-					'example': '/mempool/sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+					'example': '/mempool/RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 					'description': 'This method return address mempool transactions.',
 					'base': '/mempool/',
 					'method': 'GET',
@@ -236,13 +236,13 @@
 						{
 							'title': 'address',
 							'description': 'Request address',
-							'example': 'sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+							'example': 'RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 							'key': true
 						}
 					]
 				}, {
 					'name': '/unspent/string:address',
-					'example': '/unspent/sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww?amount=1',
+					'example': '/unspent/RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y?amount=1',
 					'description': 'This method return address unspent outputs.',
 					'base': '/unspent/',
 					'method': 'GET',
@@ -251,7 +251,7 @@
 						{
 							'title': 'address',
 							'description': 'Request address',
-							'example': 'sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+							'example': 'RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 							'key': true
 						}, {
 							'title': 'amount',
@@ -262,7 +262,7 @@
 					]
 				}, {
 					'name': '/history/string:address',
-					'example': '/history/sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+					'example': '/history/RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 					'description': 'This method return list of address transaction hashes.',
 					'base': '/history/',
 					'method': 'GET',
@@ -271,7 +271,7 @@
 						{
 							'title': 'address',
 							'description': 'Request address',
-							'example': 'sugar1qm5936j6znw9agctfmp6xp5w3uzn0g80gqnrqww',
+							'example': 'RAJrEvNaw9caFanPgvD2tC5T2pvnmYQk1Y',
 							'key': true
 						}, {
 							'title': 'offset',
@@ -282,7 +282,7 @@
 					]
 				}, {
 					'name': '/transaction/string:hash',
-					'example': '/transaction/3b73d354eeb6b1be29bd3c1f61b6d3953c1e3b124ba0f2776ad390cd4329ebbf',
+					'example': '/transaction/b86cab327a985d18d34f415b8b8a6e490ce3163d5f4427fe7a1355edf5c790cd',
 					'description': 'This method return info about transaction.',
 					'base': '/transaction/',
 					'method': 'GET',
@@ -291,7 +291,7 @@
 						{
 							'title': 'hash',
 							'description': 'Transaction hash',
-							'example': '3b73d354eeb6b1be29bd3c1f61b6d3953c1e3b124ba0f2776ad390cd4329ebbf',
+							'example': 'b86cab327a985d18d34f415b8b8a6e490ce3163d5f4427fe7a1355edf5c790cd',
 							'key': true
 						}
 					]
@@ -315,7 +315,7 @@
 					'id': 'fee'
 				}, {
 					'name': '/decode/string:raw',
-					'example': '/decode/010000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff200308b11f04422fff5d083ffffd7a000000000d2f6e6f64655374726174756d2f00000000020000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000010000001976a914fcdf384938cdffa630ea4b2638dfca818ca54a1a88ac0120000000000000000000000000000000000000000000000000000000000000000000000000',
+					'example': '/decode/0400008085202f89041771ea8c135f79f704728431de96e123de8e1fbddb1318545589766da682fdd0000000006b483045022100e6214cdcc7bf76461f9e7d1cc6900edbe3d9dd1ae8e5db661846e1fe4bcf4f8902206367ec4e4664887c54d350102f97601287314d5ed814b612b875bf7ec473f1880121026ffb75d205c379fa5065a28566b6b27f777a18bd54ba8bbb0b992e0047ae752afeffffff864e76a1c833646fb225cd5f1c8dda14392c1ee4ab5b5258f01b77d6e3b0b984000000006a47304402203d9d7213421735a6c1356ba44a892d6111710fb750a1bd3b32eb64dbdc485d0302203167d60d71b8d629a60a748c7e2504e5dba8f11eca9851bdab5f1aa62d2a29440121022b6c46ae878a6b513dacaac5a438535c420e492b9e990d5c4f12fdb05683e878feffffff005213320b45ed1187efc714917a0adb2508f4d5b8585f690cebb7459ed292f0000000006a473044022023b83bb7135aaa6dfd415ce9d1c0b8b5a4d1f5158267009d739ab0451263c13702201ff4864f0f5a176cc944c062ebc9d287f712e902b0c54465c91159f593714c930121024165dc6162c351085eb11709ab5ca53b1affd13337fbc2ff903d1acf22b0ea8dfeffffffd2b45cfdc1c9015cfe82dc18e220ca804a7dd8051a1a69f55488ba312a3ddcb8000000006a4730440220237c9f359785716828dd52178de4dc903eaab601580288d960966d084ffecbcb022067e4b30679b3681f39e6314d9c4cebd7a640ae2d3e6af5af809823254aacc48101210338e9674a0a7969b510ef211349ae07f1992b31f84f30e7349dd6614e72902f81feffffff0236bc1000000000001976a914a2f25e437f7f5bc2aa3cc71d0d1f7ac0fbe1e68888ac80a81201000000001976a9140b4865dd4b252596c1d59d6d1f57b0c6ed012a6488ac961d1100b51d11000000000000000000000000',
 					'description': 'This method return decoded info about transaction.',
 					'base': '/decode/',
 					'method': 'GET',
@@ -324,18 +324,18 @@
 						{
 							'title': 'transaction',
 							'description': 'Signed transaction',
-							'example': '010000000001010000000000000000000000000000000000000000000000000000000000000000ffffffff200308b11f04422fff5d083ffffd7a000000000d2f6e6f64655374726174756d2f00000000020000000000000000266a24aa21a9ede2f61c3f71d1defd3fa999dfa36953755c690689799962b48bebd836974e8cf900000000010000001976a914fcdf384938cdffa630ea4b2638dfca818ca54a1a88ac0120000000000000000000000000000000000000000000000000000000000000000000000000',
+							'example': '0400008085202f89041771ea8c135f79f704728431de96e123de8e1fbddb1318545589766da682fdd0000000006b483045022100e6214cdcc7bf76461f9e7d1cc6900edbe3d9dd1ae8e5db661846e1fe4bcf4f8902206367ec4e4664887c54d350102f97601287314d5ed814b612b875bf7ec473f1880121026ffb75d205c379fa5065a28566b6b27f777a18bd54ba8bbb0b992e0047ae752afeffffff864e76a1c833646fb225cd5f1c8dda14392c1ee4ab5b5258f01b77d6e3b0b984000000006a47304402203d9d7213421735a6c1356ba44a892d6111710fb750a1bd3b32eb64dbdc485d0302203167d60d71b8d629a60a748c7e2504e5dba8f11eca9851bdab5f1aa62d2a29440121022b6c46ae878a6b513dacaac5a438535c420e492b9e990d5c4f12fdb05683e878feffffff005213320b45ed1187efc714917a0adb2508f4d5b8585f690cebb7459ed292f0000000006a473044022023b83bb7135aaa6dfd415ce9d1c0b8b5a4d1f5158267009d739ab0451263c13702201ff4864f0f5a176cc944c062ebc9d287f712e902b0c54465c91159f593714c930121024165dc6162c351085eb11709ab5ca53b1affd13337fbc2ff903d1acf22b0ea8dfeffffffd2b45cfdc1c9015cfe82dc18e220ca804a7dd8051a1a69f55488ba312a3ddcb8000000006a4730440220237c9f359785716828dd52178de4dc903eaab601580288d960966d084ffecbcb022067e4b30679b3681f39e6314d9c4cebd7a640ae2d3e6af5af809823254aacc48101210338e9674a0a7969b510ef211349ae07f1992b31f84f30e7349dd6614e72902f81feffffff0236bc1000000000001976a914a2f25e437f7f5bc2aa3cc71d0d1f7ac0fbe1e68888ac80a81201000000001976a9140b4865dd4b252596c1d59d6d1f57b0c6ed012a6488ac961d1100b51d11000000000000000000000000',
 							'key': true
 						}
 					]
 				}, {
 					'name': '/broadcast',
 					'example': '/broadcast',
-					'description': 'This method broadcast raw signed transaction to Sugarchain network.',
+					'description': 'This method broadcast raw signed transaction to Verus network.',
 					'method': 'POST',
 					'id': 'broadcast',
 					'response': {
-						'result': '8d0f52a1177c7a954cf4f952532c49c8d55f9437539b544d92f83c14e1929950',
+						'result': 'b86cab327a985d18d34f415b8b8a6e490ce3163d5f4427fe7a1355edf5c790cd',
 						'error': null,
 						'id': 'api-server'
 					},

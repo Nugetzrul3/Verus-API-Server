@@ -12,11 +12,8 @@ class General():
             data["result"]["supply"] = utils.supply(data["result"]["blocks"])["supply"]
             data["result"]["reward"] = utils.reward(data["result"]["blocks"])
             data["result"].pop("verificationprogress")
-            data["result"].pop("initialblockdownload")
             data["result"].pop("pruned")
             data["result"].pop("softforks")
-            data["result"].pop("bip9_softforks")
-            data["result"].pop("warnings")
             data["result"].pop("size_on_disk")
 
             nethash = utils.make_request("getnetworkhashps", [120, data["result"]["blocks"]])
@@ -67,5 +64,5 @@ class General():
 
     @classmethod
     def price(cls):
-        link = "https://api.coingecko.com/api/v3/simple/price?ids=sugarchain&vs_currencies=usd,btc"
+        link = "https://api.coingecko.com/api/v3/simple/price?ids=verus-coin&vs_currencies=usd,btc"
         return requests.get(link).json()
