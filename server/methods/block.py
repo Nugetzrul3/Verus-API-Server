@@ -1,7 +1,7 @@
 from server.methods.transaction import Transaction
 from server import utils
 from server import cache
-import config
+from server import config
 
 class Block():
     @classmethod

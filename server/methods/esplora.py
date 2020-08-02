@@ -1,5 +1,5 @@
 from server import cache
-import config
+from server import config
 
 class Esplora():
     @classmethod

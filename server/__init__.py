@@ -3,7 +3,7 @@ from flask_caching import Cache
 from flask_restful import Api
 from flask_cors import CORS
 from flask import Flask
-import config
+from server import config
 import time
 
 app = Flask(__name__)

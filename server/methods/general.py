@@ -1,7 +1,7 @@
 from server import utils
 from server import cache
 import requests
-import config
+from server import config
 
 class General():
     @classmethod

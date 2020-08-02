@@ -5,7 +5,7 @@ from server.methods.general import General
 from server.methods.esplora import Esplora
 from server.methods.block import Block
 from server import stats
-import config
+from server import config
 
 blueprint = Blueprint("esplora", __name__)
 

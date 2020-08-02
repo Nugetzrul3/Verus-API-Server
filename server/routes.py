@@ -1,7 +1,7 @@
 from flask import jsonify, render_template
 from server import stats
 from server import utils
-import config
+from server import config
 
 def init(app):
     @app.route("/stats")

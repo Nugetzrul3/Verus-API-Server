@@ -1,5 +1,5 @@
 import requests
-import config
+from server import config
 import math
 import json
 
