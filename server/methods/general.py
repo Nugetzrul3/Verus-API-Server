@@ -45,8 +45,8 @@ class General():
         # return data
 
         return utils.response({
-            "feerate": utils.satoshis(0.00001),
-            "blocks": 6
+            "feerate": utils.satoshis(0.000001),
+            "blocks": 20
         })
 
     @classmethod
