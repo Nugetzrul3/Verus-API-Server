@@ -9,8 +9,8 @@ class General():
         data = utils.make_request("getblockchaininfo")
 
         if data["error"] is None:
-            data["result"]["supply"] = utils.supply(data["result"]["blocks"])["supply"]
-            data["result"]["reward"] = utils.reward(data["result"]["blocks"])
+            data["result"]["supply"] = utils.supply()["supply"]
+            data["result"]["reward"] = utils.satoshis(float(utils.make_request("getblocksubsidy")["result"]["miner"]))
             data["result"].pop("verificationprogress")
             data["result"].pop("pruned")
             data["result"].pop("softforks")
@@ -27,7 +27,7 @@ class General():
     def supply(cls):
         data = utils.make_request("getblockchaininfo")
         height = data["result"]["blocks"]
-        result = utils.supply(height)
+        result = utils.supply()
         result["height"] = height
 
         return result

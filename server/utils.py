@@ -26,25 +26,12 @@ def reward(height):
 
     return int(satoshis(42.94967296) // (2 ** halvings))
 
-def supply(height):
-    reward = satoshis(42.94967296)
-    halvings = 12500000
-    halvings_count = 0
-    supply = reward
-
-    while height > halvings:
-        total = halvings * reward
-        reward = reward / 2
-        height = height - halvings
-        halvings_count += 1
-
-        supply += total
-
-    supply = supply + height * reward
+def supply():
+    url = requests.get("https://explorer.veruscoin.io/ext/getmoneysupply")
+    result = float(url.json()) * (10 ** 8)
 
     return {
-        "halvings": int(halvings_count),
-        "supply": int(supply)
+        "supply": result
     }
 
 def satoshis(value):
